@@ -59,7 +59,7 @@ func CatchAllHandler(ctx context.Context, bot *slackbot.Bot, evt *slack.MessageE
 
 func MentionHandler(ctx context.Context, bot *slackbot.Bot, evt *slack.MessageEvent) {
 	if slackbot.IsMentioned(evt, bot.BotUserID()) {
-		bot.Reply(evt, "You really do care about me. :heart:", WithTyping)
+		bot.Reply(evt, "My greatest pain in life is that I will never be able to see myself perform live.", WithTyping)
 	}
 }
 
